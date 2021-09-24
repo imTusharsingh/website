@@ -10,9 +10,9 @@ const Components = () => {
                 <nav className="nav">
 
                     <div className="brand">
-                        <img className="brand_img" src="website/images/brand1.jpeg" alt="" />
-                        <img className="brand_img" src="website/images/Union 1.png" alt="" />
-                        <img className="brand_img" src="website/images/Group 66.png" alt="" />
+                        <img className="brand_img" src="/website/images/brand1.jpeg" alt="" />
+                        <img className="brand_img" src="/website/images/Union 1.png" alt="" />
+                        <img className="brand_img" src="/website/images/Group 66.png" alt="" />
                     </div>
                     <div className="search">
                         <button className="search_btn"><i className="fa fa-search" aria-hidden="true"></i></button>
@@ -37,8 +37,8 @@ const Components = () => {
                 </nav>
 
                 <div className="imgcontainer">
-                    <img className="main" src="website/images/Rectangle 2.png" alt="" />
-                    <img className="main_mobile" src="website/images/Rectangle 2 mobile.png" alt="" />
+                    <img className="main" src="/website/images/Rectangle 2.png" alt="" />
+                    <img className="main_mobile" src="/website/images/Rectangle 2 mobile.png" alt="" />
 
                     <span className="computer">Computer Engineering</span>
                     <span className="small">142,765 Computer Engineers follow this</span>
@@ -67,7 +67,7 @@ const Components = () => {
                             <i className="fa fa-sort-desc" aria-hidden="true"></i>
                         </div>
 
-                        <button className="join_desktop"><img src="website/images/Vector.png" alt="" /> Join Group</button>
+                        <button className="join_desktop"><img src="/website/images/Vector.png" alt="" /> Join Group</button>
 
                     </div>
                     <button className="join_mobile">Join Group</button>
@@ -78,17 +78,17 @@ const Components = () => {
                 <div className="main_center">
                     <div className="left_container">
                         <div className="post">
-                            <img src="website/images/Rectangle 5.png" alt="" className="post_image" />
+                            <img src="/website/images/Rectangle 5.png" alt="" className="post_image" />
                             <div className="post_content">
-                                <img src="website/images/hand.png" alt="" />
+                                <img src="/website/images/hand.png" alt="" />
                                 <div className="post_heading">
                                     <h2>What if famous brands had regular fonts? Meet RegularBrands!</h2>
-                                    <button><img src="website/images/Vector (1).png" alt="" className="option" /></button>
+                                    <button><img src="/website/images/Vector (1).png" alt="" className="option" /></button>
                                 </div>
                                 <h4>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</h4>
                                 <div className="post_bottom">
                                     <div className="user">
-                                        <img src="website/images/Rectangle 3.png" alt="" />
+                                        <img src="/website/images/Rectangle 3.png" alt="" />
                                         <span className="user_name">Sarthak Kamra</span>
                                     </div>
                                     <div className="info">
@@ -103,17 +103,17 @@ const Components = () => {
                         </div>
 
                         <div className="post">
-                            <img src="website/images/Rectangle 5.png" alt="" className="post_image" />
+                            <img src="/website/images/Rectangle 5.png" alt="" className="post_image" />
                             <div className="post_content">
-                                <img src="website/images/hand.png" alt="" />
+                                <img src="/website/images/hand.png" alt="" />
                                 <div className="post_heading">
                                     <h2>What if famous brands had regular fonts? Meet RegularBrands!</h2>
-                                    <button><img src="website/images/Vector (1).png" alt="" className="option" /></button>
+                                    <button><img src="/website/images/Vector (1).png" alt="" className="option" /></button>
                                 </div>
                                 <h4>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</h4>
                                 <div className="post_bottom">
                                     <div className="user">
-                                        <img src="website/images/Rectangle 3.png" alt="" />
+                                        <img src="/website/images/Rectangle 3.png" alt="" />
                                         <span className="user_name">Sarthak Kamra</span>
                                     </div>
                                     <div className="info">
@@ -159,28 +159,28 @@ const Components = () => {
                             </div>
                             <div className="groups">
                                 <div className="avtar">
-                                    <img src="website/images/Rectangle 3.png" alt="" />
+                                    <img src="/website/images/Rectangle 3.png" alt="" />
                                     <h3>Activism</h3>
                                 </div>
                                 <button className="followed">Followed</button>
                             </div>
                             <div className="groups">
                                 <div className="avtar">
-                                    <img src="website/images/Rectangle 3.png" alt="" />
+                                    <img src="/website/images/Rectangle 3.png" alt="" />
                                     <h3>Activism</h3>
                                 </div>
                                 <button className="follow">Follow</button>
                             </div>
                             <div className="groups">
                                 <div className="avtar">
-                                    <img src="website/images/Rectangle 3.png" alt="" />
+                                    <img src="/website/images/Rectangle 3.png" alt="" />
                                     <h3>Activism</h3>
                                 </div>
                                 <button className="follow">Follow</button>
                             </div>
                             <div className="groups">
                                 <div className="avtar">
-                                    <img src="website/images/Rectangle 3.png" alt="" />
+                                    <img src="/website/images/Rectangle 3.png" alt="" />
                                     <h3>Activism</h3>
                                 </div>
                                 <button className="follow">Follow</button>
