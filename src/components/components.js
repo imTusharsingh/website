@@ -4,6 +4,31 @@ import "./components.css"
 
 
 const Components = () => {
+    const [ishide, setishide] = React.useState(false)
+    const [up, setup] = React.useState(false)
+
+
+    const visible = () => {
+        setishide(true)
+    }
+    const deactive = () => {
+        setishide(false)
+        setup(false)
+    }
+
+   
+
+    const loginvisible=()=>{
+        setup(true)
+        setishide(false)
+    }
+
+    const signuppage=()=>{
+        setup(false)
+        setishide(true)
+    }
+
+
     return (
         <>
             <div className="main_container">
@@ -18,7 +43,7 @@ const Components = () => {
                         <button className="search_btn"><i className="fa fa-search" aria-hidden="true"></i></button>
                         <input type="text" placeholder="Search for your favorite groups in ATG" />
                     </div>
-                    <div className="sign"><span>Create account.</span><span className="link">It's free! </span><i className="fa fa-sort-desc" aria-hidden="true">
+                    <div className="sign"><span>Create account.</span><span className="link" onClick={() => visible()}>It's free! </span><i className="fa fa-sort-desc" aria-hidden="true">
                         {/* <div className="uservalid">
                         <h3 className="signup">sign-up</h3>
                         <h3 className="login">Login</h3>
@@ -196,17 +221,19 @@ const Components = () => {
 
                 </div>
 
-                {/* <div className="signup_page">
-                <button classname="hide_page">x</button>
-                    <div className="signupheader">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼  </div>
-                    <div className="signupwrapper">
+
+
+                <div className={ishide ? "signup_page":"signup_pagedeactive"}>
+                    <button className="hide_page_btn" onClick={() => deactive()}>x</button>
+                    <div className={ishide?"signupheader":"signupheaderdeactive"}>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼    </div>
+                    <div className={ishide?"signupwrapper":"signupwrapperdeactive"}>
                         <div className="signupleft">
                             <h2>Create Account</h2>
                             <div className="usersigninput">
                                 <div><input type="text" placeholder="First Name" />
-                                <input type="text" placeholder="Last Name" /></div>
+                                    <input type="text" placeholder="Last Name" /></div>
                                 <input type="email" placeholder="Email" />
-                                <input type="password" placeholder="Password"/>
+                                <input type="password" placeholder="Password" />
                                 <input type="password" placeholder="Confirm Password" />
                             </div>
                             <button className="create_account">Create Account</button>
@@ -215,16 +242,42 @@ const Components = () => {
                         </div>
 
                         <div className="signupright">
-                            <h4>Already have an account?<button>Sign In</button></h4>
-                            <img src="/images/atg_illustration.png" alt="" />
+                            <h4>Already have an account?<button onClick={()=>loginvisible()}>Sign In</button></h4>
+                            <img src="/website/images/atg_illustration.png" alt="" />
                             <h5>By signing up, you agree to our Terms & conditions, Privacy policy</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div className={up ?   "login_page" : "login_pagedeactive"}>
+                    <button className="hide_page_btn_login" onClick={() => deactive()}>x</button>
+                    <div className={up? "loginheader": "loginheaderdeactive"} >Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼    </div>
+                    <div className={up?"loginwrapper":"loginwrapperdeactive"}>
+                        <div className="loginleft">
+                            <h2>Sign In</h2>
+                            <div className="userlogininput">
+
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                            </div>
+                            <button className="create_accountlogin">Sign In</button>
+                            <button className="loginw_face">Sign up with Facebook</button>
+                            <button className="loginw_google">Sign up with Google</button>
+                            <h3 className="forgot">Forgot Password?</h3>
+                        </div>
+
+                        <div className="loginright">
+                            <h4>Don't have an accoun yet?<button onClick={()=>signuppage()}>Create new for free!</button></h4>
+                            <img src="/website/images/atg_illustration.png" alt="" />
+
 
                         </div>
                     </div>
 
                 </div>
 
-                <div className="cover"></div> */}
+
+                <div className={(ishide || up) ?   "cover":"coverdeactive"}></div>
             </div>
         </>
     )

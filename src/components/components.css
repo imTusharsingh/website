@@ -80,11 +80,12 @@ input::placeholder{
 }
 .link{
     color: blue;
+    cursor: pointer;
 }
 
 .fa.fa-sort-desc{
     padding-left: .625rem;
-    cursor: pointer;
+    
 
 }
 
@@ -534,6 +535,8 @@ margin-right: .2rem;
 }
 
 /* _________________________ */
+
+
 .signup_page{
    position: fixed;
    top: 50%;
@@ -543,68 +546,122 @@ margin-right: .2rem;
    background: #fff;
    height: auto;
    border-radius: 1rem;
-  
+   width: 46rem;
+   height: 32.0625rem;
+  display: block;
 }
+
+.signup_pagedeactivate{
+    display:none !important;
+}
+
+.hide_page_btn{
+   position: fixed;
+    right: 0;
+    font-size: 2rem;
+    z-index: 500;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight:bold ;
+    background: #b3b0b0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #525252;
+    padding-bottom: .2rem;
+}
+
+.hide_page_btn:hover{
+    color: #2F6CE5;
+}
+
 .signupheader{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: .8125rem;
     font-weight: bold;
-    margin-top: 1rem;
-  
+    color: #008A45;
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    background: #EFFFF4;
+    border-radius:.5rem .5rem 0rem 0rem;
+    top: 0;  
 }
 
-   
+   .signupheaderdeactive{
+       display: none;
+   }
  
 
-.signupwrapper{
-    margin: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+ .signupwrapper{
+    margin: 1rem;
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ justify-content: center;
+}
+
+.signupwrapperdeactive{
+    display: none;
 }
 
 .signupleft{
-   
-   display: grid;
-   grid-template-rows: 1fr 5fr 1fr 1fr;
-   row-gap: 2rem;
+  display: flex; 
+  flex-direction: column;
 }
 
 .signupleft>h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top:1rem ;
+    padding-bottom: 1rem;
+}
+
+.usersigninput{
+    padding-top: 1rem;
+    padding-bottom: 1rem ;
 }
 
 .usersigninput>div{
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    
 }
 .usersigninput>div>input{
     font-size: 1rem;
     background: #f7f8fa;
     width: 50%;
     height:2.875rem ;
-    margin-bottom: 1rem;
     margin-left: 0;
+    border: 1px solid #D9D9DB;
+    padding-left: 1rem;
 }
 .usersigninput>input{
     font-size: 1rem;
     background: #f7f8fa;
     width: 100%;
     height:2.875rem ;
-    margin-bottom: 1rem;
     margin-left: 0;
+    border: 1px solid #D9D9DB;
+    padding-left: 1rem;
 }
+
+
 
 .create_account{
     background: #2F6CE5;
-border-radius: 1.25rem;
+    border-radius: 1.25rem;
     color: white;
     border: none;
+    font-size: 0.875rem;
+    height: 2.5rem;
 }
 
 .Signw_face{
@@ -614,6 +671,9 @@ border-radius: 1.25rem;
     font-size: 0.875rem;
     font-weight: normal;
     color: #000;
+    height: 2.375rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 
 }
 
@@ -624,7 +684,8 @@ border-radius: 1.25rem;
     font-size: 0.875rem;
     font-weight: normal;
     color: #000;
-
+    height: 2.375rem;
+    margin-bottom: 1rem;
 }
 
 .signupright{
@@ -632,7 +693,7 @@ border-radius: 1.25rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
+   
 }
 
 .signupright>h4{
@@ -642,6 +703,8 @@ border-radius: 1.25rem;
 .signupright>img{
     width: 20rem;
     height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .signupright>h4>button{
@@ -649,7 +712,9 @@ border-radius: 1.25rem;
     background: none;
     color: blue;
     font-size: 0.8125rem;
-}
+    cursor: pointer;
+    margin-left: .3rem;
+} 
 .cover{
     position: fixed;
     width: 100vw;
@@ -659,9 +724,200 @@ border-radius: 1.25rem;
     background: rgba(0, 0, 0, 0.4);
 }
 
-.signup_page.hide{
+.coverdeactive{
     display: none;
 }
+
+.signupright>h5{
+    font-size: .6875rem;
+    opacity: 0.6;
+
+}
+/* _____________________________ */
+
+.login_page{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 143;
+    background: #fff;
+    height: auto;
+    border-radius: 1rem;
+    width: 46rem;
+    height: 32.0625rem;
+    display: block; 
+ }
+
+ 
+
+.hide_page_btn_login{
+   position: fixed;
+    right: 0;
+    font-size: 2rem;
+    z-index: 500;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight:bold ;
+    background: #b3b0b0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #525252;
+    padding-bottom: .2rem;
+}
+
+.hide_page_btnlogin:hover{
+    color: #2F6CE5;
+}
+
+.loginheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8125rem;
+    font-weight: bold;
+    color: #008A45;
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    background: #EFFFF4;
+    border-radius:.5rem .5rem 0rem 0rem;
+    top: 0; 
+     
+}
+
+ 
+ 
+
+ .loginwrapper{
+    margin: 2rem;
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+.loginwrapperdeactive{
+    display: none;
+}
+
+.loginleft{
+  display: flex; 
+  flex-direction: column;
+}
+
+.loginleft>h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top:1rem ;
+    padding-bottom: 1rem;
+}
+
+.userlogininput{
+    padding-top: 1rem;
+    padding-bottom: 1rem ;
+}
+
+
+
+.userlogininput>input{
+    font-size: 1rem;
+    background: #f7f8fa;
+    width: 100%;
+    height:2.875rem ;
+    margin-left: 0;
+    border: 1px solid #D9D9DB;
+    padding-left: 1rem;
+}
+
+
+
+.create_accountlogin{
+    background: #2F6CE5;
+    border-radius: 1.25rem;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    height: 2.5rem;
+}
+
+.loginw_face{
+    background: #fff;
+    border: 0.0375rem solid #D9D9DB;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #000;
+    height: 2.375rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.loginw_google{
+    background: #fff;
+    border: 0.0375rem solid #D9D9DB;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #000;
+    height: 2.375rem;
+    margin-bottom: 1rem;
+}
+
+.loginright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.loginright>h4{
+    font-size: .8125rem;
+}
+
+.loginright>img{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.loginright>h4>button{
+    border: none;
+    background: none;
+    color: blue;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    margin-left: .3rem;
+} 
+
+
+.login_pagedeactivate> *{
+    display:none !important;
+}
+
+.loginheaderdeactive{
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1216px){
     html{
@@ -858,4 +1114,12 @@ font-family: IBM Plex Sans;
 font-size: 1rem;
 
 }
+
+.signup_page{
+    display: none !important;
+    
+}
+
+
+
 }
