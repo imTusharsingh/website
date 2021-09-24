@@ -47,10 +47,10 @@ const Components = () => {
 
                 <div className="center_nav">
                     <ul className="list">
-                        <li className="All_Posts"><a href="">All Posts(32)</a></li>
-                        <li className="hide" ><a href="">Article</a></li>
-                        <li className="hide"><a href="">Event</a></li>
-                        <li className="hide"><a href="">Job</a></li>
+                        <li className="All_Posts">All Posts(32)</li>
+                        <li className="hide" >Article</li>
+                        <li className="hide">Event</li>
+                        <li className="hide">Job</li>
 
                     </ul>
                     <li className="filter_mobile"><label >Filter:</label>
