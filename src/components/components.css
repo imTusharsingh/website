@@ -194,6 +194,8 @@ color: #FFFFFF;
 .center_nav>.list> li{
     padding: .7rem 1.3rem;
      position: relative;
+     font-size: 1.2rem;
+     font-weight: 400;
 }
 
 .center_nav>.list> li > a{
