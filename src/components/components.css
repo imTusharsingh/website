@@ -285,9 +285,9 @@ color: #FFFFFF;
     /* border: 1px solid red; */
     margin: 10px 15px;
 }
-.left_container >.post> .post_content>img{
+/* .left_container >.post> .post_content>img{
     height: 1.3rem;
-}
+} */
 
 .post_heading{
     display: flex;
@@ -300,7 +300,24 @@ color: #FFFFFF;
     
 }
 
-
+.left_container >.post> .post_content>.hand {
+    content: "\270D";
+    /* height: 1.3rem; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 4.8125rem;
+    height: 1.5625rem;
+    font-size: 1.125rem;
+    align-self: center;
+  }
+  .left_container >.post> .post_content>.hand>h4{
+      text-align: center;
+      font-size: 1.125rem;
+      padding-left: .5rem;
+      padding-top: .4rem;
+      
+  }
 
 .post_heading>h2{
     font-weight: 600;
@@ -317,8 +334,9 @@ color: #FFFFFF;
     cursor: pointer;
 }
 
-.post_heading>button>img{
+.post_heading>button>.fas.fa-ellipsis-h{
     width: 1.5rem;
+    /* font-size: 1rem; */
 }
 
 

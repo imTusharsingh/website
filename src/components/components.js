@@ -101,11 +101,13 @@ const Components = () => {
                     <div className="left_container">
                         <div className="post">
                             <img src="/website/images/Rectangle 5.png" alt="" className="post_image" />
+                           
                             <div className="post_content">
-                                <img src="/website/images/hand.png" alt="" />
+                                {/* <img src="/website/images/hand.png" alt="" /> */}
+                                <span className="hand">&#9997;<h4>Article</h4></span>
                                 <div className="post_heading">
                                     <h2>What if famous brands had regular fonts? Meet RegularBrands!</h2>
-                                    <button><img src="/website/images/Vector (1).png" alt="" className="option" /></button>
+                                    <button><i class="fas fa-ellipsis-h"></i></button>
                                 </div>
                                 <h4>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</h4>
                                 <div className="post_bottom">
@@ -127,10 +129,37 @@ const Components = () => {
                         <div className="post">
                             <img src="/website/images/Rectangle 5.png" alt="" className="post_image" />
                             <div className="post_content">
-                                <img src="/website/images/hand.png" alt="" />
+                                {/* <img src="/website/images/hand.png" alt="" /> */}
+                                <span className="hand">🔬<h4>Education</h4></span>
                                 <div className="post_heading">
-                                    <h2>What if famous brands had regular fonts? Meet RegularBrands!</h2>
-                                    <button><img src="/website/images/Vector (1).png" alt="" className="option" /></button>
+                                    <h2>Tax Benefits for Investment under National Pension Scheme launched by Government</h2>
+                                    <button><i class="fas fa-ellipsis-h"></i></button>
+                                </div>
+                                <h4>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</h4>
+                                <div className="post_bottom">
+                                    <div className="user">
+                                        <img src="/website/images/Rectangle 3.png" alt="" />
+                                        <span className="user_name">Sarthak Kamra</span>
+                                    </div>
+                                    <div className="info">
+                                        <div className="view_wrapper">
+                                            <i className="fa fa-eye"></i>
+                                            <span className="views">1.4k views</span>
+                                        </div>
+                                        <div className="share"> <i className="fa fa-share-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="post">
+                            <img src="/website/images/Rectangle 5.png" alt="" className="post_image" />
+                            <div className="post_content">
+                                {/* <img src="/website/images/hand.png" alt="" /> */}
+                                <span className="hand">🗓️<h4>Meetup</h4></span>
+                                <div className="post_heading">
+                                    <h2>Finance & Investment Elite Social Mixer @Lujiazui</h2>
+                                    <button><i class="fas fa-ellipsis-h"></i></button>
                                 </div>
                                 <h4>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</h4>
                                 <div className="post_bottom">
@@ -237,8 +266,8 @@ const Components = () => {
                             <button className="create_account">Create Account</button>
                             <a className="create_accountmobile" onClick={()=>loginvisible()}>or,Sign In</a>
                             </div>
-                            <button className="Signw_face"><i class="fab fa-facebook"></i>Sign up with Facebook</button>
-                            <button className="signw_google"><i class="fab fa-google"></i>Sign up with Google</button>
+                            <button className="Signw_face"><i className="fab fa-facebook"></i>Sign up with Facebook</button>
+                            <button className="signw_google"><i className="fab fa-google"></i>Sign up with Google</button>
                         </div>
 
                         <div className="signupright">
@@ -268,8 +297,8 @@ const Components = () => {
                             <a className="create_accountloginmobile"  onClick={()=>signuppage()}>or, Create Account</a>
 
                             </div>
-                            <button className="loginw_face"><i class="fab fa-facebook"></i>Sign in with Facebook</button>
-                            <button className="loginw_google"><i class="fab fa-google"></i>Sign in with Google</button>
+                            <button className="loginw_face"><i className="fab fa-facebook"></i>Sign in with Facebook</button>
+                            <button className="loginw_google"><i className="fab fa-google"></i>Sign in with Google</button>
                             <h3 className="forgot">Forgot Password?</h3>
                         </div>
 
