@@ -44,10 +44,7 @@ const Components = () => {
                         <input type="text" placeholder="Search for your favorite groups in ATG" />
                     </div>
                     <div className="sign"><span>Create account.</span><span className="link" onClick={() => visible()}>It's free! </span><i className="fa fa-sort-desc" aria-hidden="true">
-                        {/* <div className="uservalid">
-                        <h3 className="signup">sign-up</h3>
-                        <h3 className="login">Login</h3>
-                    </div> */}
+                      
                     </i>
 
                     </div>
@@ -95,7 +92,7 @@ const Components = () => {
                         <button className="join_desktop"><img src="/website/images/Vector.png" alt="" /> Join Group</button>
 
                     </div>
-                    <button className="join_mobile">Join Group</button>
+                    <button className="join_mobile"onClick={() => visible()}>Join Group</button>
                     <button className="postadd_mobile"><i className="far fa-pencil"></i></button>
                 </div>
 
@@ -224,7 +221,7 @@ const Components = () => {
 
 
                 <div className={ishide ? "signup_page":"signup_pagedeactive"}>
-                    <button className="hide_page_btn" onClick={() => deactive()}>x</button>
+                    <button className={ishide ?"hide_page_btn":"hide_page_btndeactive"} onClick={() => deactive()}>x</button>
                     <div className={ishide?"signupheader":"signupheaderdeactive"}>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼    </div>
                     <div className={ishide?"signupwrapper":"signupwrapperdeactive"}>
                         <div className="signupleft">
@@ -236,9 +233,12 @@ const Components = () => {
                                 <input type="password" placeholder="Password" />
                                 <input type="password" placeholder="Confirm Password" />
                             </div>
+                            <div className="createaccountcont">
                             <button className="create_account">Create Account</button>
-                            <button className="Signw_face">Sign up with Facebook</button>
-                            <button className="signw_google">Sign up with Google</button>
+                            <a className="create_accountmobile" onClick={()=>loginvisible()}>or,Sign In</a>
+                            </div>
+                            <button className="Signw_face"><i class="fab fa-facebook"></i>Sign up with Facebook</button>
+                            <button className="signw_google"><i class="fab fa-google"></i>Sign up with Google</button>
                         </div>
 
                         <div className="signupright">
@@ -250,19 +250,26 @@ const Components = () => {
                     </div>
                 </div>
                 <div className={up ?   "login_page" : "login_pagedeactive"}>
-                    <button className="hide_page_btn_login" onClick={() => deactive()}>x</button>
+                    <button className={up ?"hide_page_btn_login":"hide_page_btn_logindeactive"} onClick={() => deactive()}>x</button>
                     <div className={up? "loginheader": "loginheaderdeactive"} >Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼    </div>
                     <div className={up?"loginwrapper":"loginwrapperdeactive"}>
                         <div className="loginleft">
-                            <h2>Sign In</h2>
+                            <h2 className="hideinmobile">Sign In</h2>
+                            <h2 className="mobile">Welcome back!</h2>
+
                             <div className="userlogininput">
 
                                 <input type="email" placeholder="Email" />
                                 <input type="password" placeholder="Password" />
                             </div>
+                           
+                            <div className="createaccountlogincont">
                             <button className="create_accountlogin">Sign In</button>
-                            <button className="loginw_face">Sign up with Facebook</button>
-                            <button className="loginw_google">Sign up with Google</button>
+                            <a className="create_accountloginmobile"  onClick={()=>signuppage()}>or, Create Account</a>
+
+                            </div>
+                            <button className="loginw_face"><i class="fab fa-facebook"></i>Sign in with Facebook</button>
+                            <button className="loginw_google"><i class="fab fa-google"></i>Sign in with Google</button>
                             <h3 className="forgot">Forgot Password?</h3>
                         </div>
 

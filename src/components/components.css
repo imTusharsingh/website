@@ -555,23 +555,28 @@ margin-right: .2rem;
     display:none !important;
 }
 
+.hide_page_btndeactive{
+    display: none;
+}
+
 .hide_page_btn{
-   position: fixed;
-    right: 0;
-    font-size: 2rem;
+    position: absolute;
+    right: .5rem;
+    top:.5rem ;
+    font-size: 1.5rem;
     z-index: 500;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
     border: none;
     font-weight:bold ;
-    background: #b3b0b0;
+    background: #212529;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #525252;
+    color: #fff;
     padding-bottom: .2rem;
 }
 
@@ -653,7 +658,10 @@ margin-right: .2rem;
     padding-left: 1rem;
 }
 
-
+.createaccountcont{
+    display: flex;
+    align-items: center;
+}
 
 .create_account{
     background: #2F6CE5;
@@ -662,8 +670,11 @@ margin-right: .2rem;
     border: none;
     font-size: 0.875rem;
     height: 2.5rem;
+    flex: 1;
 }
-
+.create_accountmobile{
+    display:none;
+}
 .Signw_face{
     background: #fff;
     border: 0.0375rem solid #D9D9DB;
@@ -752,26 +763,27 @@ margin-right: .2rem;
  
 
 .hide_page_btn_login{
-   position: fixed;
-    right: 0;
-    font-size: 2rem;
+    position: absolute;
+    right: .5rem;
+    top:.5rem ;
+    font-size: 1.5rem;
     z-index: 500;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
     border: none;
     font-weight:bold ;
-    background: #b3b0b0;
+    background: #212529;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #525252;
+    color: #fff;
     padding-bottom: .2rem;
 }
 
-.hide_page_btnlogin:hover{
+.hide_page_btn_login:hover{
     color: #2F6CE5;
 }
 
@@ -837,7 +849,15 @@ margin-right: .2rem;
     padding-left: 1rem;
 }
 
+.createaccountlogincont{
+    display: flex;
+    align-items: center;
+}
 
+
+.create_accountloginmobile{
+    display:none;
+}
 
 .create_accountlogin{
     background: #2F6CE5;
@@ -846,6 +866,7 @@ margin-right: .2rem;
     border: none;
     font-size: 0.875rem;
     height: 2.5rem;
+    flex:1;
 }
 
 .loginw_face{
@@ -901,22 +922,45 @@ margin-right: .2rem;
 } 
 
 
-.login_pagedeactivate> *{
+
+
+.hide_page_btn_logindeactive{
     display:none !important;
 }
+
+
 
 .loginheaderdeactive{
     display: none !important;
 }
 
+.mobile{
+    display: none;
+}
 
 
+.forgot{
+    text-align: center;
+}
 
 
+.fab.fa-facebook{
+    width: 1rem;
+    height: 1rem;
+    color: #2F6CE5;
+    margin-right: .5rem;
+}
 
-
-
-
+.fab.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+  }
 
 
 @media screen and (max-width:1216px){
@@ -1007,7 +1051,7 @@ margin-right: .2rem;
     }
     .join_mobile{
         display: block;
-        position: fixed;
+        position: absolute;
         top: 1.9rem;
         right: 1.125rem;
         z-index: 100;
@@ -1115,11 +1159,196 @@ font-size: 1rem;
 
 }
 
-.signup_page{
+/* .signup_page{
     display: none !important;
     
+} */
+
+.signup_page{
+    position: sticky;
+   
+   transform: none;
+   top: 0%;
+   bottom: 0%;
+   left: 0;
+    z-index: 150;
+    background: #fff;
+    width: 100%;
+    height: 32.0625rem;
+   display: block;
+   padding: 1rem;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+ }
+
+
+ .signupwrapper{
+    margin: 0;
+  display: grid;
+ grid-template-columns: 1fr ;
+ align-items: center;
+ justify-content: center;
+ background: #fff;
+ width: 100%;
+}
+
+.signupright>img{
+   display: none;
+}
+
+.signupheader{
+    display: none;
+   
+     
+}
+
+.create_account{
+    background: #2F6CE5;
+    border-radius: 1.25rem;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    flex: 0.55;
+}
+.create_accountmobile{
+    display:block;
+    flex: 0.45;
+   text-align: right;
+   padding-right: .5rem;
+   text-decoration: underline;
+   font-weight: 500;
+   font-size: .8125rem;
+}
+
+.signupright>h4{
+    display: none;
+}
+
+.signupright>h5{
+    text-align: center;
+
+}
+
+.hide_page_btn{
+    position: absolute;
+     right: 2rem;
+     top:2rem ;
+     font-size: 1.5rem;
+     z-index: 500;
+     width: 2rem;
+     height: 2rem;
+     border-radius: 2rem;
+     border: none;
+     font-weight:bold ;
+     background: #212529;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     color: #fff;
+     padding-bottom: .2rem;
+     
+ }
+
+
+
+ .login_page{
+    position: sticky;
+   
+   transform: none;
+   top: 0%;
+   bottom: 0%;
+   left: 0;
+    z-index: 150;
+    background: #fff;
+    width: 100%;
+    height: 32.0625rem;
+   display: block;
+   padding: 1rem;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+ }
+
+
+ .loginwrapper{
+    margin: 0;
+  display: grid;
+ grid-template-columns: 1fr ;
+ align-items: center;
+ justify-content: center;
+ background: #fff;
+ width: 100%;
+}
+
+.loginright>img{
+   display: none;
+}
+
+.loginheader{
+    display: none;
+   
+     
+}
+
+.create_accountlogin{
+    background: #2F6CE5;
+    border-radius: 1.25rem;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    flex: 0.55;
+}
+.create_accountloginmobile{
+    display:block;
+    flex: 0.45;
+   text-align: right;
+   padding-right: .5rem;
+   text-decoration: underline;
+   font-weight: 500;
+   font-size: .8125rem;
+}
+
+.loginright>h4{
+    display: none;
 }
 
 
+
+.hide_page_btn_login{
+    position: absolute;
+     right: 2rem;
+     top:2rem ;
+     font-size: 1.5rem;
+     z-index: 500;
+     width: 2rem;
+     height: 2rem;
+     border-radius: 2rem;
+     border: none;
+     font-weight:bold ;
+     background: #212529;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     color: #fff;
+     padding-bottom: .2rem;
+     
+ }
+
+ .hideinmobile{
+     display: none;
+ }
+
+ .mobile{
+     display: block;
+ }
+
+ .forgot{
+     text-align: center;
+ }
 
 }
